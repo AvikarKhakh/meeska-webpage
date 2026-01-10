@@ -1,0 +1,393 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #0057ff;
+  color: #ffffff;
+}
+
+/* Nav */
+.hero-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.6rem 4vw 1.4rem;
+}
+
+.hero-logo {
+  height: 150px;
+  width: auto;
+  display: block;
+}
+
+.hero-nav-right {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  font-size: 1.45rem;  /* larger header links */
+  font-weight: 700;
+}
+
+.hero-nav-right a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.hero-nav-right a:hover {
+  opacity: 0.75;
+}
+
+/* CTA button - Meeska red bubble */
+.hero-cta {
+  border: none;
+  border-radius: 999px;
+  padding: 0.7rem 1.9rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  background-color: #ff2b4f;
+  color: white;
+  cursor: pointer;
+}
+
+.hero-cta:hover {
+  filter: brightness(0.92);
+}
+
+/* HERO SECTION */
+.hero-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem 1rem 4rem;
+  min-height: calc(100vh - 140px);
+}
+
+/* Big heading & subheading text */
+.hero-heading {
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7rem;
+  text-align: center;
+}
+
+.hero-word-meeska {
+  font-weight: 900;
+  font-size: clamp(3.5rem, 7vw, 5rem);
+  letter-spacing: 0.04em;
+}
+
+.hero-sub {
+  font-size: clamp(1.2rem, 2.5vw, 1.7rem);
+  max-width: 700px;
+}
+
+.hero-sub-2 {
+  font-size: clamp(1rem, 2.2vw, 1.5rem);
+  max-width: 650px;
+  opacity: 0.95;
+}
+
+/* Product image / glow area */
+.hero-product {
+  margin-top: 2.5rem;
+}
+
+.hero-product-glow {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ffffff 0, #0057ff 70%);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 2.2rem;
+}
+
+.hero-product-placeholder {
+  width: 210px;
+  height: 110px;
+  border-radius: 999px 999px 80px 80px;
+  background-color: #ffffff;
+  color: #0057ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+/* LEARN ABOUT THE CHEESE SECTION */
+.learn-section {
+  background-color: #0057ff;
+  padding: 5rem 1.5rem 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.learn-icon {
+  margin-bottom: 1.5rem;
+}
+
+.learn-bowl {
+  width: 80px;
+  height: 50px;
+  border-radius: 50% 50% 40% 40%;
+  background: #ffffff;
+  margin: 0 auto;
+}
+
+.learn-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-bottom: 3rem;
+}
+
+.learn-heading-top {
+  font-size: clamp(1.8rem, 3vw, 2.3rem);
+  font-weight: 800;
+}
+
+.learn-heading-bottom {
+  font-size: clamp(2.2rem, 4vw, 2.8rem);
+  font-weight: 900;
+  color: #ff2b4f; /* red accent */
+}
+
+.learn-cheese-placeholder {
+  margin-top: 1rem;
+  width: min(900px, 100%);
+  height: 320px;
+  border-radius: 2rem;
+  background: radial-gradient(circle, #ffffff 0, #ffe0e6 60%, #0057ff 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0057ff;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+/* US VS. THEM COMPARISON SECTION */
+.comparison-section {
+  background-color: #0057ff;
+  padding: 6rem 2rem 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.comparison-title {
+  font-size: clamp(3rem, 6vw, 4.5rem);
+  font-weight: 900;
+  margin-top: -2rem;     /* pull title upward */
+  margin-bottom: 4rem;   /* more space between title and table */
+  letter-spacing: 2px;
+}
+
+/* Chart container - NO BORDER BOX */
+.comparison-table {
+  width: min(1200px, 95%);
+  padding: 0;          /* clean edges */
+  background-color: transparent;
+  border: none;        /* removed red boundary */
+}
+
+/* Each row */
+.comparison-row {
+  display: flex;
+  align-items: stretch;
+  min-height: 90px;
+  font-size: 1.6rem;
+}
+
+.comparison-row + .comparison-row {
+  border-top: 3px dashed #ff2b4f; /* red row separators */
+}
+
+/* Each cell */
+.comparison-cell {
+  flex: 1;
+  text-align: center;
+  padding: 1.2rem 0.5rem;
+  color: #ffffff;
+  font-size: 1.45rem;
+}
+
+/* Vertical red dashed lines */
+.comparison-cell + .comparison-cell {
+  border-left: 3px dashed #ff2b4f;
+}
+
+/* First column (labels) */
+.comparison-label {
+  flex: 1.3;
+  text-align: left;
+  font-weight: 800;
+  font-size: 1.55rem;
+  padding-left: 1rem;
+}
+
+/* Header row style */
+.comparison-row-header {
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  min-height: 110px;
+}
+
+/* ===================== */
+/* EMAIL SIGNUP MODAL    */
+/* ===================== */
+
+.signup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.signup-modal {
+  position: relative;
+  background: #ffffff;
+  color: #1f2933;
+  padding: 2.5rem 2.7rem 2.2rem;
+  border-radius: 1.8rem;
+  width: min(420px, 90%);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);
+}
+
+.signup-close {
+  position: absolute;
+  top: 0.9rem;
+  right: 1.1rem;
+  border: none;
+  background: transparent;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.signup-title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 0.6rem;
+}
+
+.signup-text {
+  font-size: 0.98rem;
+  margin-bottom: 1.4rem;
+  color: #4b5563;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-bottom: 0.9rem;
+}
+
+.signup-input {
+  padding: 0.75rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid #d1d5db;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.signup-input:focus {
+  border-color: #ff2b4f;
+  box-shadow: 0 0 0 3px rgba(255, 43, 79, 0.2);
+}
+
+.signup-button {
+  border: none;
+  border-radius: 999px;
+  padding: 0.75rem 1rem;
+  font-weight: 700;
+  background-color: #ff2b4f;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 0.98rem;
+}
+
+.signup-button:hover {
+  filter: brightness(0.95);
+}
+
+.signup-skip {
+  margin-top: 0.5rem;
+  border: none;
+  background: none;
+  font-size: 0.9rem;
+  color: #6b7280;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* FOOTER */
+.footer-section {
+  width: 100%;
+  background: white;
+  padding: 40px 0 30px;
+  border-top: 2px solid #e9e9e9;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-content {
+  width: 100%;
+  max-width: 1200px;
+  padding-left: 60px;
+}
+
+.footer-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0047FF;
+  margin-bottom: 15px;
+}
+
+.footer-form {
+  display: flex;
+  align-items: center;
+  width: 320px;
+  padding: 10px 15px;
+  border: 2px solid #0047FF;
+  border-radius: 10px;
+  background: white;
+}
+
+.footer-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.footer-submit {
+  border: none;
+  background: none;
+  font-size: 22px;
+  color: #0047FF;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  width: 100%;
+  max-width: 1200px;
+  padding-left: 60px;
+  margin-top: 25px;
+  font-size: 14px;
+  color: #555;
+}
